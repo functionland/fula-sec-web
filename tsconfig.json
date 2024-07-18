@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "downlevelIteration": true,
+      "outDir": "./build",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "lib": ["ES2019", "esnext", "dom"],
+      "target": "ES2019",
+      "allowJs": true,
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "importHelpers": false,
+      "skipLibCheck": true,
+      "emitDeclarationOnly": true,
+      "declaration": true
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "**/*.test.ts",
+      "scripts/**/*",
+      "node_modules",
+      "lib"
+    ]
+  }
+  
