@@ -1,10 +1,12 @@
 {
     "name": "@functionland/fula-sec-web",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "This library provides security features of Fula Protocol",
     "type": "module",
     "browser": "./lib/esm/index.js",
     "types": "./lib/esm/index.d.ts",
+    "main": "./lib/cjs/index.js",
+	"module": "./lib/esm/index.js",
     "exports": {
         ".": {
             "types": "./lib/esm/index.d.ts",
@@ -13,7 +15,8 @@
             },
             "node": {
                 "require": "./lib/cjs/index.js"
-            }
+            },
+            "default": "./lib/esm/index.js"
         }
     },
     "scripts": {
