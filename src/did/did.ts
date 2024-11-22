@@ -1,8 +1,12 @@
-import { decryptJWE, createJWE, JWE, x25519Encrypter, x25519Decrypter, Encrypter } from 'did-jwt';
-import { generateKeyPairFromSeed } from '@stablelib/x25519';
-import * as u8a from 'uint8arrays';
+import { decryptJWE, createJWE, JWE,
+  x25519Encrypter,
+  x25519Decrypter,
+  Encrypter,
+} from 'did-jwt'
+import { generateKeyPairFromSeed } from '@stablelib/x25519'
+import * as u8a from 'uint8arrays'
 import { InvalidDid } from '../did/utils/errors.js';
-import { BASE58_DID_PREFIX, EDWARDS_DID_PREFIX } from './utils/encode.prefix.js';
+import { BASE58_DID_PREFIX, EDWARDS_DID_PREFIX } from "./utils/encode.prefix.js"
 
 export type CreateJWEOptions = {
   protectedHeader?: Record<string, any>;

@@ -154,7 +154,8 @@ declare module '@functionland/fula-sec-web/did/utils/errors' {
 }
 declare module '@functionland/fula-sec-web/index' {
   import { HDKEY } from '@functionland/fula-sec-web/did/hkey/key.js/index';
-  export { HDKEY };
+  import { DID } from '@functionland/fula-sec-web/did/did.js/index';
+  export { DID, HDKEY };
   export { exportKeyPair } from '@functionland/fula-sec-web/did/hkey/key.js/index';
 
 }
