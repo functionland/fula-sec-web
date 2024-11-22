@@ -1,6 +1,6 @@
 {
     "name": "@functionland/fula-sec-web",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "This library provides security features of Fula Protocol",
     "type": "module",
     "browser": "./lib/esm/index.js",
